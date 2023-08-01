@@ -1,0 +1,8 @@
+<!-- Đặt tệp drawable này trong thư mục res/drawable -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Ảnh giả định là một hình tròn màu xám -->
+    <item android:drawable="@android:color/darker_gray" />
+    <item android:drawable="@drawable/ic_launcher_foreground" />
+
+</layer-list>
