@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- TextView để hiển thị tiêu đề "Chọn giới tính" -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,17 +13,20 @@
         android:textSize="20sp"
         android:textColor="#000000" />
 
+    <!-- RadioGroup chứa hai RadioButton -->
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- RadioButton cho giới tính Nam -->
         <RadioButton
             android:id="@+id/radioButtonMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nam" />
 
+        <!-- RadioButton cho giới tính Nữ -->
         <RadioButton
             android:id="@+id/radioButtonFemale"
             android:layout_width="wrap_content"

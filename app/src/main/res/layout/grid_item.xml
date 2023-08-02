@@ -1,3 +1,5 @@
+<!-- Định nghĩa một ImageView để hiển thị hình ảnh -->
+
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/imageView"
     android:layout_width="150dp"
