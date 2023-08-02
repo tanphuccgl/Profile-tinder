@@ -1,8 +1,12 @@
-<!-- Đặt tệp drawable này trong thư mục res/drawable -->
+<!-- Đoạn mã XML dùng để tạo một tệp drawable là layer-list. -->
+
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Ảnh giả định là một hình tròn màu xám -->
+    <!-- Item thứ nhất: Sử dụng một drawable màu xám đậm làm ảnh nền giả định. -->
     <item android:drawable="@android:color/darker_gray" />
+
+    <!-- Item thứ hai: Sử dụng drawable được đặt tên là ic_launcher_foreground. -->
+    <!-- Đây có thể là một biểu tượng ứng dụng, được đặt trong thư mục res/drawable của dự án. -->
     <item android:drawable="@drawable/ic_launcher_foreground" />
 
 </layer-list>
