@@ -11,6 +11,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.example.profiletinder.R;
+import com.google.gson.Gson;
 
 import java.util.List;
 

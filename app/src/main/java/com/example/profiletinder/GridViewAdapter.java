@@ -1,6 +1,9 @@
 package com.example.profiletinder;
 
 import android.content.Context;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +30,11 @@ public class GridViewAdapter extends BaseAdapter {
     public int getCount() {
         return mData.size();
     }
+    public void updateData(List<String> newData) {
+        mData = newData;
+        notifyDataSetChanged();
+    }
+
 
     // Phương thức getItem() được ghi đè từ BaseAdapter để trả về phần tử tại vị trí position trong danh sách dữ liệu.
     @Override
@@ -49,9 +57,23 @@ public class GridViewAdapter extends BaseAdapter {
         }
 
         // Lấy tham chiếu đến EditText trong convertView, sau đó thiết lập văn bản cho EditText từ danh sách dữ liệu mData tại vị trí position.
-        EditText editText = convertView.findViewById(R.id.editText1);
+        EditText editText = convertView.findViewById(R.id.editText5);
         editText.setText(mData.get(position));
+        // Lắng nghe sự kiện nhập dữ liệu cho EditText
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
 
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                mData.set(position, charSequence.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });
         // Trả về convertView chứa thông tin của phần tử tại vị trí position trong danh sách dữ liệu.
         return convertView;
     }

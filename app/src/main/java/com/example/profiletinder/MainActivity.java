@@ -1,6 +1,7 @@
 package com.example.profiletinder;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 
