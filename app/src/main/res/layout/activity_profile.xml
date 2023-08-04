@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Định nghĩa một giao diện người dùng sử dụng ScrollView làm layout cha. -->
-<ScrollView
+<?xml version="1.0" encoding="utf-8"?><!-- Định nghĩa một giao diện người dùng sử dụng ScrollView làm layout cha. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="#FFFFFF">
 
     <!-- Sử dụng RelativeLayout để tổ chức các thành phần trên màn hình. -->
     <RelativeLayout
@@ -17,12 +15,12 @@
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ảnh của bạn"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textSize="24sp"
+            android:background="#FFFFFF"
+            android:text="Ảnh của bạn"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- GridView để hiển thị danh sách các ảnh -->
         <GridView
@@ -31,30 +29,30 @@
             android:layout_height="300sp"
             android:layout_below="@id/text1"
             android:columnWidth="200dp"
-            android:numColumns="3"
-            android:horizontalSpacing="10dp"
-            android:verticalSpacing="10dp"
             android:gravity="center"
-            android:paddingTop="16dp"/>
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:paddingTop="16dp"
+            android:verticalSpacing="10dp" />
 
         <!-- TextView hiển thị văn bản "Giới thiệu bản thân" -->
         <TextView
             android:id="@+id/text2"
-            android:layout_below="@id/gridView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giới thiệu bản thân"
+            android:layout_below="@id/gridView"
             android:layout_centerHorizontal="true"
-            android:textSize="24sp"
+            android:background="#FFFFFF"
+            android:text="Giới thiệu bản thân"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- EditText để nhập giới thiệu bản thân -->
         <EditText
             android:id="@+id/editText"
-            android:layout_below="@id/text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
             android:layout_margin="16dp"
             android:hint="Nhập vào..."
             android:padding="8dp" />
@@ -62,14 +60,14 @@
         <!-- TextView hiển thị văn bản "Sở thích" -->
         <TextView
             android:id="@+id/text3"
-            android:layout_below="@id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sở thích"
+            android:layout_below="@id/editText"
             android:layout_centerHorizontal="true"
-            android:textSize="24sp"
+            android:background="#FFFFFF"
+            android:text="Sở thích"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- GridView để hiển thị danh sách sở thích -->
         <GridView
@@ -77,44 +75,44 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@id/text3"
-            android:numColumns="3"
-            android:horizontalSpacing="10dp"
-            android:verticalSpacing="10dp"
             android:gravity="center"
-            android:padding="16dp" />
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:padding="16dp"
+            android:verticalSpacing="10dp" />
 
         <!-- TextView hiển thị văn bản "Mục đích hẹn hò: Chọn" -->
         <TextView
             android:id="@+id/tvPurpose"
-            android:layout_below="@id/gridView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mục đích hẹn hò: Chọn"
+            android:layout_below="@id/gridView2"
             android:layout_centerHorizontal="true"
-            android:paddingBottom="20sp"
+            android:background="#FFFFFF"
             android:paddingTop="10sp"
-            android:textSize="24sp"
+            android:paddingBottom="20sp"
+            android:text="Mục đích hẹn hò: Chọn"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- TextView hiển thị văn bản "Nghề nghiệp/Công ty" -->
         <TextView
             android:id="@+id/text4"
-            android:layout_below="@id/tvPurpose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nghề nghiệp/Công ty"
+            android:layout_below="@id/tvPurpose"
             android:layout_centerHorizontal="true"
-            android:textSize="24sp"
+            android:background="#FFFFFF"
+            android:text="Nghề nghiệp/Công ty"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- EditText để nhập nghề nghiệp hoặc công ty -->
         <EditText
             android:id="@+id/editText1"
-            android:layout_below="@id/text4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/text4"
             android:layout_margin="16dp"
             android:hint="Nhập vào..."
             android:padding="8dp" />
@@ -122,21 +120,21 @@
         <!-- TextView hiển thị văn bản "Trường học" -->
         <TextView
             android:id="@+id/text5"
-            android:layout_below="@id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Trường học"
+            android:layout_below="@id/editText1"
             android:layout_centerHorizontal="true"
-            android:textSize="24sp"
+            android:background="#FFFFFF"
+            android:text="Trường học"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- EditText để nhập tên trường học -->
         <EditText
             android:id="@+id/editText2"
-            android:layout_below="@id/text5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
             android:layout_margin="16dp"
             android:hint="Nhập vào..."
             android:padding="8dp" />
@@ -144,21 +142,21 @@
         <!-- TextView hiển thị văn bản "Thành phố đang sống" -->
         <TextView
             android:id="@+id/text6"
-            android:layout_below="@id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thành phố đang sống"
+            android:layout_below="@id/editText2"
             android:layout_centerHorizontal="true"
-            android:textSize="24sp"
+            android:background="#FFFFFF"
+            android:text="Thành phố đang sống"
             android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:textSize="24sp" />
 
         <!-- EditText để nhập tên thành phố đang sống -->
         <EditText
             android:id="@+id/editText3"
-            android:layout_below="@id/text6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/text6"
             android:layout_margin="16dp"
             android:hint="Nhập vào..."
             android:padding="8dp" />
@@ -166,14 +164,24 @@
         <!-- TextView hiển thị văn bản "Giới tính: Chọn" -->
         <TextView
             android:id="@+id/tvGender"
-            android:layout_below="@id/editText3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giới tính: Chọn"
+            android:layout_below="@id/editText3"
             android:layout_centerHorizontal="true"
-            android:textSize="20sp"
             android:paddingBottom="70sp"
-            android:textColor="#000000" />
+            android:text="Giới tính: Chọn"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!-- Button "Lưu" -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Lưu" />
 
     </RelativeLayout>
 </ScrollView>
